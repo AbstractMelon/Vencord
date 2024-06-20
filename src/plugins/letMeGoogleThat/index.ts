@@ -16,7 +16,7 @@ function letMeGoogleThat(message) {
 const settings = definePluginSettings({
     defaultUrl: {
         type: OptionType.STRING,
-        default: "https://letmegooglethat.com/?q=",
+        default: "https://letmegooglethat.vercel.app?q=",
         description: "Default google url - RECOMMEND NOT CHANGING UNLESS YOU KNOW WHAT YOU ARE DOING!",
         restartNeeded: true,
     },
@@ -25,7 +25,7 @@ const settings = definePluginSettings({
 export default definePlugin({
     name: "LetMeGoogleThat",
     description: "Makes a let me google that command!",
-    authors: [Devs.Abstractmelon],
+    authors: [Devs.Abstractmelon, Devs.UnluckyCrafter],
     dependencies: ["CommandsAPI"],
     settings,
     commands: [
